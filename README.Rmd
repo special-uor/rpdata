@@ -1,0 +1,59 @@
+---
+output: github_document
+---
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# rpdata: Reading Palaeofire Database <img src="https://raw.githubusercontent.com/special-uor/rpd/master/inst/images/logo.png" alt="logo" align="right" height=200px/>
+<!-- badges: start -->
+`r badger::badge_devel("special-uor/rpdata", "yellow")`
+`r badger::badge_github_actions("special-uor/rpdata")`
+`r badger::badge_cran_release("rpdata", "black")`
+<!-- badges: end -->
+
+The goal of `rpdata` is to provide access to the Reading Palaeofire Database.
+
+## Installation
+
+You can(not) install the released version of rpdata from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("rpdata")
+```
+
+And the development version from 
+[GitHub](https://github.com/special-uor/rpdata) with:
+
+``` r
+# install.packages("remotes")
+remotes::install_github("special-uor/rpdata", "dev")
+```
+## Example
+
+#### Load tables to working environment
+```{r}
+data("site", package = "rpdata")
+data("entity", package = "rpdata")
+data("date_info", package = "rpdata")
+data("sample", package = "rpdata")
+```
+
+
+#### Find entities link to sites
+```{r, eval = TRUE}
+`%>%` <- rpdata::`%>%`
+ents <- site %>%
+  dplyr::slice(1:4) %>%
+  rpdata::get_entities()
+
+ents %>%
+  knitr::kable()
+```
