@@ -1,15 +1,20 @@
 Package: rpdata
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: Reading Palaeofire Database
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Roberto",
+           family = "Villegas-Diaz",
+           role = c("aut", "cre"),
+           email = "r.villegas-diaz@reading.ac.uk",
+           comment = c(ORCID = "0000-0001-5036-8661")),
+    person("SPECIAL Research Group @ University of Reading", role = c("cph")))
+Description: Provides access to the Reading Palaeofire Database.
+License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 Depends: 
     R (>= 2.10)
 URL: https://github.com/special-uor/rpdata
 BugReports: https://github.com/special-uor/rpdata/issues
+RoxygenNote: 7.1.1
