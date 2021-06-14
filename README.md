@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# rpdata: Reading Palaeofire Database <img src="https://raw.githubusercontent.com/special-uor/rpd/master/inst/images/logo.png" alt="logo" align="right" height=200px/>
+# rpdata: Reading Palaeofire Database <img src="inst/images/logo.png" alt="logo" align="right" height=200px/>
 
 <!-- badges: start -->
 

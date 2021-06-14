@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# rpdata: Reading Palaeofire Database <img src="https://raw.githubusercontent.com/special-uor/rpd/master/inst/images/logo.png" alt="logo" align="right" height=200px/>
+# rpdata: Reading Palaeofire Database <img src="inst/images/logo.png" alt="logo" align="right" height=200px/>
 <!-- badges: start -->
 `r badger::badge_devel("special-uor/rpdata", "yellow")`
 `r badger::badge_github_actions("special-uor/rpdata")`
