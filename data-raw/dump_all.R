@@ -14,8 +14,7 @@ usethis::use_data(chronology, overwrite = TRUE)
 
 date_info <- dabr::select_all(conn, "date_info") %>%
   tibble::as_tibble() %>%
-  magrittr::set_class(c("date_info", class(.))) %>%
-  dplyr::rename(reason_age_not_used = reason_age_used)
+  magrittr::set_class(c("date_info", class(.)))
 usethis::use_data(date_info, overwrite = TRUE)
 
 entity <- dabr::select_all(conn, "entity") %>%
@@ -24,8 +23,7 @@ entity <- dabr::select_all(conn, "entity") %>%
 usethis::use_data(entity, overwrite = TRUE)
 
 entity_link_publication <- conn %>%
-  dabr::select_all("entity_link_pub") %>%
-  # dabr::select_all("entity_link_publication") %>%
+  dabr::select_all("entity_link_publication") %>%
   tibble::as_tibble() %>%
   magrittr::set_class(c("entity_link_publication", class(.)))
 usethis::use_data(entity_link_publication, overwrite = TRUE)
@@ -37,8 +35,7 @@ model_name <- conn %>%
 usethis::use_data(model_name, overwrite = TRUE)
 
 publication <- conn %>%
-  dabr::select_all("pub") %>%
-  # dabr::select_all("publication") %>%
+  dabr::select_all("publication") %>%
   tibble::as_tibble() %>%
   magrittr::set_class(c("publication", class(.)))
 usethis::use_data(publication, overwrite = TRUE)
