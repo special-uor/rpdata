@@ -37,13 +37,15 @@ usethis::use_data(model_name, overwrite = TRUE)
 publication <- conn %>%
   dabr::select_all("publication") %>%
   tibble::as_tibble() %>%
-  magrittr::set_class(c("publication", class(.)))
+  magrittr::set_class(c("publication", class(.))) %>%
+  dplyr::filter(ID_PUB %in% entity_link_publication$ID_PUB)
 usethis::use_data(publication, overwrite = TRUE)
 
 sample <- conn %>%
   dabr::select_all("sample") %>%
   tibble::as_tibble() %>%
-  magrittr::set_class(c("sample", class(.)))
+  magrittr::set_class(c("sample", class(.))) %>%
+  dplyr::select(-dplyr::starts_with("depth_"))
 usethis::use_data(sample, overwrite = TRUE)
 
 site <- conn %>%
