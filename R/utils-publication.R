@@ -18,6 +18,8 @@ get_publications <- function(.site_tbl, ...) {
 #' get_publications(conn)
 #' }
 get_publications.site <- function(.site_tbl, ...) {
+  # Local bindings
+  ID_SITE <- site_name <- NULL
   aux <- tibble::tibble()
   if ("ID_SITE" %in% colnames(.site_tbl))
     aux <- rpdata::entity %>%

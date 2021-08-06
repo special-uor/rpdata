@@ -18,6 +18,8 @@ get_entities <- function(.site_tbl, ...) {
 #' get_entities(conn)
 #' }
 get_entities.site <- function(.site_tbl, ...) {
+  # Local bindings
+  ID_SITE <- site_name <- NULL
   aux <- tibble::tibble()
   if ("ID_SITE" %in% colnames(.site_tbl))
     aux <- rpdata::entity %>%
