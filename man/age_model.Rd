@@ -5,7 +5,7 @@
 \alias{age_model}
 \title{\code{age_model} table}
 \format{
-A data frame (\code{tibble} object) with 100568 rows and 8 variables:
+A data frame (\code{tibble} object) with 121720 rows and 8 variables:
 \describe{
 \item{ID_MODEL}{int ...}
 \item{ID_SAMPLE}{int ...}

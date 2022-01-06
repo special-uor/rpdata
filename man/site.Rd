@@ -5,7 +5,7 @@
 \alias{site}
 \title{\code{site} table}
 \format{
-A data frame (\code{tibble} object) with 1477 rows and 12 variables:
+A data frame (\code{tibble} object) with 1480 rows and 12 variables:
 \describe{
 \item{ID_SITE}{int ...}
 \item{site_name}{int ...}

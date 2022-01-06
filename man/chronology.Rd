@@ -5,7 +5,7 @@
 \alias{chronology}
 \title{\code{chronology} table}
 \format{
-A data frame (\code{tibble} object) with 255264 rows and 3 variables:
+A data frame (\code{tibble} object) with 254017 rows and 3 variables:
 \describe{
 \item{ID_MODEL}{int ...}
 \item{ID_SAMPLE}{int ...}

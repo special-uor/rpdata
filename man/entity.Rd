@@ -5,7 +5,7 @@
 \alias{entity}
 \title{\code{entity} table}
 \format{
-A data frame (\code{tibble} object) with 1682 rows and 13 variables:
+A data frame (\code{tibble} object) with 1676 rows and 13 variables:
 \describe{
 \item{ID_SITE}{int ...}
 \item{ID_ENTITY}{int ...}

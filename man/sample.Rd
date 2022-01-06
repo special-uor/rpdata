@@ -5,7 +5,7 @@
 \alias{sample}
 \title{\code{sample} table}
 \format{
-A data frame (\code{tibble} object) with 256197 rows and 6 variables:
+A data frame (\code{tibble} object) with 254763 rows and 7 variables:
 \describe{
 \item{ID_ENTITY}{int ...}
 \item{ID_SAMPLE}{int ...}

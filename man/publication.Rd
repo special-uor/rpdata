@@ -5,7 +5,7 @@
 \alias{publication}
 \title{\code{publication} table}
 \format{
-A data frame (\code{tibble} object) with 1138 rows and 4 variables:
+A data frame (\code{tibble} object) with 1151 rows and 4 variables:
 \describe{
 \item{ID_PUB}{int ...}
 \item{citation}{int ...}

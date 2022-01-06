@@ -5,7 +5,7 @@
 \alias{date_info}
 \title{\code{date_info} table}
 \format{
-A data frame (\code{tibble} object) with 16039 rows and 14 variables:
+A data frame (\code{tibble} object) with 16432 rows and 14 variables:
 \describe{
 \item{ID_ENTITY}{int ...}
 \item{ID_DATE_INFO}{int ...}
