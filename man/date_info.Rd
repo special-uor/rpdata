@@ -7,20 +7,20 @@
 \format{
 A data frame (\code{tibble} object) with 16432 rows and 14 variables:
 \describe{
-\item{ID_ENTITY}{int ...}
-\item{ID_DATE_INFO}{int ...}
-\item{material_dated}{int ...}
-\item{date_type}{int ...}
-\item{avg_depth}{int ...}
-\item{thickness}{int ...}
-\item{lab_number}{int ...}
-\item{age_C14}{int ...}
-\item{age_calib}{int ...}
-\item{error}{int ...}
-\item{correlation_info}{int ...}
-\item{age_used}{int ...}
-\item{reason_age_not_used}{int ...}
-\item{notes}{int ...}
+\item{ID_ENTITY}{\code{Unsigned integer}: Unique identifier for the entity (as in \code{entity} table)}
+\item{ID_DATE_INFO}{\code{Unsigned integer}: Unique identifier for the date record}
+\item{material_dated}{\code{Text}: Material from which the date was obtained, if applicable}
+\item{date_type}{\code{Text}: Technique used to obtain the date measurement}
+\item{avg_depth}{\code{Double}: Average depth in the sedimentary sequence where the date was measured, in metres}
+\item{thickness}{\code{Double}: Thickness of the sample used for dating, in metres}
+\item{lab_number}{\code{Text}: Unique identifying code assigned by the dating laboratory}
+\item{age_C14}{\code{Double}: Uncalibrated radiocarbon age}
+\item{age_calib}{\code{Double}: The calendar age of a date}
+\item{error}{\code{Double}: Analytical or measurement error on the date}
+\item{correlation_info}{\code{Text}: Indication of basis for correlative dating (e.g., pollen, tephra or stratigraphic correlations)}
+\item{age_used}{\code{Text}: Indicates whether date was used by the author(s) in the construction of the original age model}
+\item{reason_age_not_used}{\code{Text}: Indication of why a date was not used in the original age model. Blank if dates were used in original model}
+\item{notes}{\code{Text}: Additional comments regarding a date record}
 }
 }
 \usage{

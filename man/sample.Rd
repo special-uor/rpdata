@@ -7,12 +7,13 @@
 \format{
 A data frame (\code{tibble} object) with 254763 rows and 7 variables:
 \describe{
-\item{ID_ENTITY}{int ...}
-\item{ID_SAMPLE}{int ...}
-\item{avg_depth}{int ...}
-\item{sample_thickness}{int ...}
-\item{charcoal_measurement}{int ...}
-\item{analytical_sample_volume}{int ...}
+\item{ID_ENTITY}{\code{Unsigned integer}: Unique identifier for the entity (as in \code{entity} table)}
+\item{ID_SAMPLE}{\code{Unsigned integer}: Unique identifier for each charcoal sample}
+\item{avg_depth}{\code{Text}: Average sampling depth, in metres}
+\item{sample_thickness}{\code{Text}: Sample thickness, in metres}
+\item{charcoal_measurement}{\code{Text}: Quantity of charcoal measured in the sample}
+\item{analytical_sample_size}{\code{Text}: Total amount of sediment sampled}
+\item{analytical_sample_size_unit}{\code{Text}: Units used for the sampling}
 }
 }
 \usage{

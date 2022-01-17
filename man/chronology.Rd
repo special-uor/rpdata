@@ -7,9 +7,9 @@
 \format{
 A data frame (\code{tibble} object) with 254017 rows and 3 variables:
 \describe{
-\item{ID_MODEL}{int ...}
-\item{ID_SAMPLE}{int ...}
-\item{original_est_age}{int ...}
+\item{ID_MODEL}{\code{Unsigned integer}: Unique identifier for the technique used to generate the original age model}
+\item{ID_SAMPLE}{\code{Unsigned integer}: Unique identifier for the sample (as in \code{sample} table)}
+\item{original_est_age}{\code{Integer}: Original estimated age}
 }
 }
 \usage{

@@ -7,19 +7,19 @@
 \format{
 A data frame (\code{tibble} object) with 1676 rows and 13 variables:
 \describe{
-\item{ID_SITE}{int ...}
-\item{ID_ENTITY}{int ...}
-\item{entity_name}{int ...}
-\item{latitude}{int ...}
-\item{longitude}{int ...}
-\item{elevation}{int ...}
-\item{depositional_context}{int ...}
-\item{measurement_method}{int ...}
-\item{TYPE}{int ...}
-\item{source}{int ...}
-\item{core_location}{int ...}
-\item{last_updated}{int ...}
-\item{ID_UNIT}{int ...}
+\item{ID_SITE}{\code{Unsigned integer}: Refers to unique identifier for each site (as given in \code{site} table)}
+\item{ID_ENTITY}{\code{Unsigned integer}: Unique identifier for each entity}
+\item{entity_name}{\code{Text}: Name of entity, where an entity may be a separate core from the site or a separate type of measurement on the same core}
+\item{latitude}{\code{Double}: Latitude of the entity, given in decimal degrees, where N is positive and S is negative}
+\item{longitude}{\code{Double}: Longitude of the entity, given in decimal degrees, where E is positive and W is negative}
+\item{elevation}{\code{Double}: Elevation of the sampling site, in metres above (+) or below (-) sea level}
+\item{depositional_context}{\code{Text}: Type of sediment sampled for charcoal}
+\item{measurement_method}{\code{Text}: Method used to measure the amount of charcoal}
+\item{TYPE}{\code{Text}: The unit type of the measured charcoal values (e.g., concentration, influx)}
+\item{source}{\code{Text}: Source of charcoal data}
+\item{core_location}{\code{Text}: Location of the entity within the site (e.g., central core or marginal core)}
+\item{last_updated}{\code{Date}: Date when the entity or its linked data was last updated}
+\item{ID_UNIT}{\code{Unsigned integer}: Unique identifier for measurement unit (as in \code{unit} table)}
 }
 }
 \usage{

@@ -5,10 +5,10 @@
 \alias{entity_link_publication}
 \title{\code{entity_link_publication} table}
 \format{
-A data frame (\code{tibble} object) with 2131 rows and 2 variables:
+A data frame (\code{tibble} object) with 2147 rows and 2 variables:
 \describe{
-\item{ID_ENTITY}{int ...}
-\item{ID_PUB}{int ...}
+\item{ID_ENTITY}{\code{Unsigned integer}: Unique identifier for the entity (as in \code{entity} table)}
+\item{ID_PUB}{\code{Unsigned integer}: Unique identifier for the publication (as in \code{publication} table)}
 }
 }
 \usage{

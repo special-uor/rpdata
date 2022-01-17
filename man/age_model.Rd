@@ -7,14 +7,14 @@
 \format{
 A data frame (\code{tibble} object) with 121720 rows and 8 variables:
 \describe{
-\item{ID_MODEL}{int ...}
-\item{ID_SAMPLE}{int ...}
-\item{mean}{int ...}
-\item{median}{int ...}
-\item{UNCERT_5}{int ...}
-\item{UNCERT_25}{int ...}
-\item{UNCERT_75}{int ...}
-\item{UNCERT_95}{int ...}
+\item{ID_MODEL}{\code{Unsigned integer}: Unique identifier for the technique used to generate the age model}
+\item{ID_SAMPLE}{\code{Unsigned integer}: Unique identifier for the sample (as in \code{sample} table)}
+\item{mean}{\code{Integer}: Mean age of the sample}
+\item{median}{\code{Integer}: Median age of the sample}
+\item{UNCERT_5}{\code{Integer}: Lower bound of the 95\% confidence interval for the median age}
+\item{UNCERT_25}{\code{Integer}: Upper bound of the 95\% confidence interval for the median age}
+\item{UNCERT_75}{\code{Integer}: Lower bound of the 75\% confidence interval for the median age}
+\item{UNCERT_95}{\code{Integer}: Upper bound of the 75\% confidence interval for the median age}
 }
 }
 \usage{

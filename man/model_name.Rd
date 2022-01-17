@@ -7,8 +7,8 @@
 \format{
 A data frame (\code{tibble} object) with 18 rows and 2 variables:
 \describe{
-\item{ID_MODEL}{int ...}
-\item{model_name}{int ...}
+\item{ID_MODEL}{\code{Unsigned integer}: Unique identifier for the technique used to generate the age model}
+\item{model_name}{\code{Text}: Name of the technique used to generate the age model}
 }
 }
 \usage{

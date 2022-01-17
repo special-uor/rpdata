@@ -7,8 +7,8 @@
 \format{
 A data frame (\code{tibble} object) with 202 rows and 2 variables:
 \describe{
-\item{ID_UNIT}{int ...}
-\item{UNIT}{int ...}
+\item{ID_UNIT}{\code{Unsigned integer}: Unique identifier for the unit record}
+\item{UNIT}{\code{Text}: Charcoal measurement unit}
 }
 }
 \usage{

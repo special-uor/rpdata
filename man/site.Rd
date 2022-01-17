@@ -7,18 +7,18 @@
 \format{
 A data frame (\code{tibble} object) with 1480 rows and 12 variables:
 \describe{
-\item{ID_SITE}{int ...}
-\item{site_name}{int ...}
-\item{latitude}{int ...}
-\item{longitude}{int ...}
-\item{elevation}{int ...}
-\item{site_type}{int ...}
-\item{water_depth}{int ...}
-\item{basin_size_class}{int ...}
-\item{catch_size_class}{int ...}
-\item{flow_type}{int ...}
-\item{basin_size_km2}{int ...}
-\item{catch_size_km2}{int ...}
+\item{ID_SITE}{\code{Unsigned integer}: Unique identifier for each site}
+\item{site_name}{\code{Text}: Site name as given by original authors or as defined by us where there was no unique name given to the site}
+\item{latitude}{\code{Double}: Latitude of the sampling site, given in decimal degrees, where N is positive and S is negative}
+\item{longitude}{\code{Double}: Longitude of the sampling site in decimal degrees, where E is positive and W is negative}
+\item{elevation}{\code{Double}: Elevation of the sampling site in metres above (+) or below (-) sea level}
+\item{site_type}{\code{Text}: Information about type of site (e.g. lake, peatland, terrestrial)}
+\item{water_depth}{\code{Double}: Water depth of the sampling site in metres}
+\item{basin_size_class}{\code{Text}: Categorical estimate of basin size}
+\item{catch_size_class}{\code{Text}: Categorical estimate of the hydrological catchment size}
+\item{flow_type}{\code{Text}: Indication of whether there is inflow and/or outflow from the sampled site}
+\item{basin_size_km2}{\code{Double}: Size of sampled site (e.g., lake or bog) in km2}
+\item{catch_size_km2}{\code{Double}: Size of hydrological catchment in km2}
 }
 }
 \usage{
